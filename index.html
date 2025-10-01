@@ -151,8 +151,8 @@
   </div>
   <div class="card" id="rulesCard">
     <h2>📜 Rules 📜</h2>
-    <button onclick="openRulesModal()">View rules</button>
-    <button onclick="openRulesModal()">View rules</button>
+    <button onclick="openmcRulesModal()">View Minecraft rules</button>
+    <button onclick="opendcRulesModal()">View Discord rules</button>
   </div>
 </div>
 
@@ -228,57 +228,85 @@
 </div>
 
 <!-- Modal Pravidla -->
-<div id="rulesModal" class="modal">
+<div id="mcRulesModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeRulesModal()">&times;</span>
-    <h2>📜 Server Rules 📜</h2>
+    <span class="close" onclick="closeMCRulesModal()">&times;</span>
+    <h2>🪓 Minecraft Rules 🪓</h2>
     <div>
       <h3>1. Behavior</h3>
-      <p>Respect other players. No insults, trolling, or griefing.</p>
+      <ul>
+        <li>Respect other players. No insults, trolling, or griefing.</li>
+        <li>Follow admin instructions at all times.</li>
+      </ul>
 
       <h3>2. Chat</h3>
-      <p>Do not misuse chat. No spamming, advertising, or inappropriate content.</p>
+      <ul>
+        <li>No spamming, advertising, or inappropriate content.</li>
+      </ul>
 
-      <h3>3. Building</h3>
-      <p>You may not destroy or copy other players' builds without permission.</p>
+      <h3>3. Building & PvP</h3>
+      <ul>
+        <li>Do not destroy or copy other players' builds without permission.</li>
+        <li>PvP is allowed only in designated arenas or with consent.</li>
+      </ul>
 
-      <h3>4. PvP</h3>
-      <p>PvP is allowed only in designated arenas or by mutual agreement.</p>
+      <h3>4. Cheats & Exploits</h3>
+      <ul>
+        <li>No cheat clients, hacks, or exploiting bugs.</li>
+        <li>Report glitches to admins instead of using them.</li>
+      </ul>
 
-      <h3>5. Cheats & Exploits</h3>
-      <p>Using cheat clients, hacks, or exploits is strictly prohibited.</p>
+      <h3>5. Accounts & Fair Play</h3>
+      <ul>
+        <li>Account sharing is not allowed.</li>
+        <li>Play fairly and respect the spirit of the game.</li>
+      </ul>
 
-      <h3>6. Reporting</h3>
-      <p>Report problems to administrators, not publicly in chat.</p>
-
-      <h3>7. Discord Rules</h3>
-      <p>Follow Discord community rules. No harassment, NSFW content, or self-promotion without permission.</p>
-
-      <h3>8. Admin Instructions</h3>
-      <p>Follow admin instructions and server rules in all situations.</p>
-
-      <h3>9. Account Sharing</h3>
-      <p>Sharing accounts with others is not allowed.</p>
-
-      <h3>10. Advertising</h3>
-      <p>Advertising other servers, websites, or services without permission is forbidden.</p>
-
-      <h3>11. Inappropriate Content</h3>
-      <p>No inappropriate skins, builds, or messages.</p>
-
-      <h3>12. Bugs & Glitches</h3>
-      <p>Do not exploit bugs or glitches. Report them to admins instead.</p>
-
-      <h3>13. Fair Play</h3>
-      <p>Play fairly and respect the spirit of the game. Cheating ruins the experience for others.</p>
-
-      <h3>14. Disclaimer</h3>
+      <h3>Disclaimer</h3>
       <p>Mars Network reserves the right to modify these rules at any time.</p>
 
       <p style="text-align:center; margin-top:20px; font-size:0.9em; color:#888;">Updated: 01/10/2025</p>
     </div>
   </div>
 </div>
+
+
+ <div id="dcRulesModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closedcRulesModal()">&times;</span>
+    <h2>💬 Discord Rules 💬</h2>
+    <div>
+      <h3>1. Behavior</h3>
+      <ul>
+        <li>Be respectful to all members. No harassment or bullying.</li>
+        <li>Follow admin and moderator instructions.</li>
+      </ul>
+
+      <h3>2. Chat</h3>
+      <ul>
+        <li>No spamming, advertising, or inappropriate content.</li>
+        <li>No NSFW content or toxic behavior.</li>
+      </ul>
+
+      <h3>3. Voice Channels</h3>
+      <ul>
+        <li>No loud noises, music spam, or disruptive behavior.</li>
+        <li>Respect other users while speaking.</li>
+      </ul>
+
+      <h3>4. Links & Advertising</h3>
+      <ul>
+        <li>No posting links to other servers, websites, or services without permission.</li>
+      </ul>
+
+      <h3>Disclaimer</h3>
+      <p>Mars Network reserves the right to modify these rules at any time.</p>
+
+      <p style="text-align:center; margin-top:20px; font-size:0.9em; color:#888;">Updated: 01/10/2025</p>
+    </div>
+  </div>
+</div>
+
 
 
 <footer>
